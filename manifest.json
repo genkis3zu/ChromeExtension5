@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "拡張機能サンプル5",
+    "version": "0.0.5",
+    "description": "最小構成" ,
+    "browser_action": {
+        "default_popup": "../html/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.google.com/*",
+                 "http://www.google.com/*"
+                ],
+            "js": ["./js/content.js"]
+        }
+    ]
+}
